@@ -1,0 +1,139 @@
+:root {
+	--very-dark-blue: hsl(233, 47%, 7%);
+	--dark-desaturated-blue: hsl(244, 38%, 16%);
+	--soft-violet: hsl(277, 64%, 61%);
+	--image-violet: hsla(277.1, 81.3%, 33.5%, 0.55);
+	--white: hsl(0, 0%, 100%);
+	--slightly-transparent-white-1: hsla(0, 0%, 100%, 0.75);
+	--slightly-transparent-white-2: hsla(0, 0%, 100%, 0.6);
+}
+
+body {
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	margin: 0;
+	background-color: var(--very-dark-blue);
+	color: var(--white);
+	font-family: 'Inter', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Lexend Deca', sans-serif;
+}
+
+p {
+	color: var(--slightly-transparent-white-1);
+}
+
+.card {
+	display: grid;
+	grid-template-columns: auto auto;
+	background-color: var(--dark-desaturated-blue);
+	border-radius: 0.5rem;
+	box-shadow: 0 4px 6px hsla(0, 0%, 0.7), 0 5px 15px hsla(0, 0%, 0.1);
+	max-width: max-content;
+	margin: auto;
+}
+
+.card .left {
+	padding: 3.25rem;
+	max-width: 40ch;
+	display: grid;
+}
+
+.left h1 {
+	margin-top: 0;
+}
+
+.stats {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	align-items: end;
+	border-radius: 0.5rem;
+}
+
+.card p {
+	line-height: 1.6;
+}
+
+.right {
+	position: relative;
+}
+
+.image-overlay {
+	background-color: hsla(276.9, 88.6%, 31%, 0.5);
+	height: 100%;
+	width: 100%;
+	position: absolute;
+}
+
+img {
+	object-fit: cover;
+	max-width: 100%;
+	display: block;
+	border-radius: 0 0.25rem 0.25rem 0;
+}
+
+.stat {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.stat-number {
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+.stat-heading {
+	color: var(--slightly-transparent-white-2);
+	font-size: 0.875rem;
+	text-transform: uppercase;
+}
+
+.accent {
+	color: var(--soft-violet);
+}
+
+.attribution {
+	font-size: 0.875rem;
+	margin-top: 1.5rem;
+	text-align: center;
+}
+
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 940px) {
+	.card {
+		grid-template-columns: none;
+		max-width: 440px;
+	}
+
+	.card .left {
+		text-align: center;
+		padding: 2rem;
+	}
+
+	img {
+		border-radius: 0.25rem 0.25rem 0 0;
+	}
+
+	.stats {
+		grid-template-columns: none;
+		gap: 3rem;
+		padding-top: 2rem;
+	}
+
+	.right {
+		grid-row-start: 1;
+	}
+}

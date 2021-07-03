@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+		<!-- normalize the css so all browsers are styled with a unified baseline -->
+		<link rel="stylesheet" href="./styles/normalize.css" />
+
+		<!-- our default stylesheet for this project -->
+		<link rel="stylesheet" href="./styles/global.css" />
+
+		<!-- font imports -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap"
+			rel="stylesheet"
+		/>
+
+		<title>Frontend Mentor | Stats preview card component</title>
+	</head>
+	<body>
+		<div>
+			<div class="card">
+				<div class="left">
+					<div>
+						<h1>Get <span class="accent">insights</span> that help your business grow.</h1>
+						<p>
+							Discover the benefits of data analytics and make better decisions regarding revenue, customer experience,
+							and overall efficiency.
+						</p>
+					</div>
+					<div class="stats">
+						<div aria-label="Ten thousand plus companies" class="stat">
+							<span aria-hidden="true" class="stat-number">10K+</span
+							><span aria-hidden="true" class="stat-heading">companies</span>
+						</div>
+						<div aria-label="Three hundred and fourteen templates" class="stat">
+							<span aria-hidden="true" class="stat-number">314 </span
+							><span aria-hidden="true" class="stat-heading">templates</span>
+						</div>
+						<div aria-label="Twelve million plus queries" class="stat">
+							<span aria-hidden="true" class="stat-number">12M+</span
+							><span aria-hidden="true" class="stat-heading">queries</span>
+						</div>
+					</div>
+				</div>
+				<div class="right">
+					<div class="image-overlay"></div>
+					<img
+						src="images/image-header-desktop.jpg"
+						alt="Office workers colloborating with one another and enjoying themselves."
+					/>
+				</div>
+			</div>
+			<div class="attribution">
+				Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
+				<a href="https://www.donovanhong.com" aria-label="Donovan's personal portfolio website." target="_blank"
+					>Donovan Hong</a
+				>.
+			</div>
+		</div>
+	</body>
+</html>
